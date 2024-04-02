@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Saloni Zade</div>
+        <div class="navigation">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li> 
+                <li><a href="#projects">Projects</a></li>
+                <li><a class="resume"onclick="window.open('./assets/Resume.pdf')">Resume</a></li>
+                <li><a href="#contact">contact</a></li>    
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="s">
+            <img src="./assets/s-letter-logo-png-13.png" alt="logo"
+            class="S-l">
+        </div>
+        <div class="logo">Saloni Zade</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()" >Skills</a></li> 
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a class="resume" onclick="window.open('./assets/Resume.pdf')">Resume</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">contact</a></li>    
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="pic-container">
+            <img src="./assets/profilepic.jpg"
+            alt="Saloni Zade profile picture"
+            class="dp">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Saloni Zade</h1>
+            <p class="section__text__p2">Web Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">
+                    Download CV</button>
+                    <button class="btn btn-color-1" onclick="location.href-'./#contact'">
+                        Contact Info </button>
+            </div>
+            <div id="socials-contact">
+                <img src="./assets/linkedin.png" alt="My Linkedin profile" 
+                class="icon" onclick="location.href='https://www.linkedin.com/in/saloni-zade-7aa816257/'">
+                <img src="./assets/git.png" alt="My Githhub profile" 
+                class="icon" onclick="location.href='https://github.com/Saloni0111-cpu'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="me">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        </div>
+        <div class="section-container">
+        <div class="section__pic-container">
+            <img src="./assets/profile2.jpg"
+            alt="profile picture"
+            class="about-pic">
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/experience.webp"
+                    alt="Experience icon"
+                    class="icon4">
+                    <h3>Experience</h3>
+                    <p>Beginner<br />Web Developer</p>
+                </div>
+                <div class="details-container">
+                    <img src="./assets/Education.png"
+                    alt="Education icon"
+                    class="icon4">
+                    <h3>Education</h3>
+                    <p>B.Tech<br />in CSE</p>
+                    
+                </div>
+            </div>
+            <div class="text-container">
+                <p class="text-content">
+                    I'm a 2nd yr B.Tech student currently pursuing my B.Tech deg in Computer Science 
+                    and Engineering at G. H. Raisoni Institute of Engineering and Technology, Nagpur.
+                    I'm a web dev with a boundless enthusiasm for learning, constantly seeking out opportunities to learn and expand my skills. Always eager to explore new experiences. Whether it's about experimenting Front-end or dealing with Back-end. I approach both learning experience with passion and dedication.
+                </p>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon-arrow" onclick="location.href='./#skills'">
+    </section>
+    
+    <section id="skills">
+            <div class="me">
+                <p class="section__text__p1">Get to know</p>
+                <h1 class="title">My Skills</h1>
+            </div>
+        <div class="skills-icon">
+            <div class="nihon-container">
+                <h4>Basic Proficiency in Japanese Language</h4>
+                <img src="./assets/nihongo.jpg" alt="My Language profeciency " 
+                class="icon2-1">
+            </div>
+            <div class="languages">
+                <h4>Basic Ideas Of</h4>
+            <img src="./assets/C_Logo.png" alt="C" 
+            class="icon2">
+            <img src="./assets/C++.png" alt="C++" 
+            class="icon2">
+            </div>
+            <div class="front">
+                <h4>Front-end</h4>
+            <img src="./assets/html5-logo.png" alt="html" 
+            class="icon2">
+            <img src="./assets/css-logo.png" alt="CSS" 
+            class="icon2">
+            <img src="./assets/js-logo.webp" alt="JS" 
+            class="icon2">
+        </div>
+        <div class="back">
+            <h4>Back-end</h4>
+            <img src="./assets/node-js-icon.avif" alt="Frameworks" 
+            class="icon2">
+        </div>
+        </div>
+        <div class="arrowicon">
+        <img src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="iconarrow2" onclick="location.href='./#projects'">
+        </div>
+    </section>
+    
+    
+    
+    <section id="projects">
+        <div class="probar"> 
+        <p class="section__text__p1">Browse my </p>
+        <h1 class="title">Projects</h1>
+    </div>
+        <div class="section-container">
+            <div class="project-container">
+                <div class="pro-container">
+                    <img src="./assets/netflix.jpeg"
+                    alt="Experience icon"
+                    class="icon5">
+                    <p>Recenty cloned<br />Netflix.com in collaboration with </p>
+                    <a  href='https://www.linkedin.com/in/tejas-agarkar-82900a250/?originalSubdomain=in'>
+                        <p>Tejas Agarkar</p>
+                    </a>
+                </div>
+                <div class="pro-container">
+                    <img src="./assets/amazon.png"
+                    alt="Education icon"
+                    class="icon5">
+                    <p>Recenty cloned<br />Amazon.com </p>
+                </div>
+                    <div class="pro-container">
+                        <img src="./assets/calc.jpg"
+                        alt="Experience icon"
+                        class="icon5">
+                    <p>A simple calc using HTML, CSS, JS </p>
+            </div> 
+            <div class="arrowicon">
+                <img src="./assets/arrow.png"
+                        alt="Arrow icon"
+                        class="iconarrow3" onclick="location.href='./#contact'">
+        </div>
+    </div>
+
+</div>      
+</section>
+
+
+
+
+
+
+
+    
+    <section id="contact">
+        <div class="me">
+                <div class="contactbar">
+                    <p class="section__text__p1">Get in Touch</p>
+                    <h1 class="title">Contact Me</h1>
+                </div>
+        </div>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/mail1.webp"
+                    alt="Email icon"
+                    class="contact-icon">
+                <p><a href="mailto:salonizade09@gmail.com">salonizade09@gmail.com</a></p>
+
+            </div>
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/linkedin2.png"
+                    alt="Linkedin icon"
+                    class="contact-icon">
+                <p><a href="https://www.linkedin.com/in/saloni-zade-7aa816257/">Saloni Zade</a></p>
+                
+            </div>
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/insta.png"
+                    alt="Instagram icon"
+                    class="contact-icon">
+                <p><a href="https://www.instagram.com/saloni_090604/">$@𝔩𝗼η𝐢...</a></p>
+                
+            </div>
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/git2.png"
+                    alt="Git icon"
+                    class="contact-icon">
+                <p><a href="https://github.com/Saloni0111-cpu">Saloni Zade</a></p>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        
+        <nav class="navfooter">
+            <div class="nav-links-containerfooter">
+                <ul class="nav-linksfooter">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li> 
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a class="resume" onclick="window.open('./assets/Resume.pdf')">Resume</a></li>
+                    <li><a href="#contact">contact</a></li>    
+                </ul>
+            </div>
+        </nav>
+        <p class="footerp">Copyright &#169; 2024 Saloni Zade, All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
